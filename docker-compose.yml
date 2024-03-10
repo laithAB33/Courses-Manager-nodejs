@@ -1,6 +1,7 @@
 services:
-  mongodb:
-    image: mongo
-    container_name: mongodb
-    ports:
-      - "27017:27017"
+    mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+     - "27017:27017"
+     command: ["--ipv4"]
